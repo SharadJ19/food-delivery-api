@@ -32,7 +32,7 @@ async fn main() {
         .layer(cors);
     
     // Start server
-    let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
+    let addr = SocketAddr::from(([0, 0, 0, 0], 3000));
     println!("🚀 Server starting on http://{}", addr);
     
     let listener = TcpListener::bind(addr).await.unwrap();
